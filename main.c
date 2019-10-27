@@ -31,7 +31,7 @@ char *ScanString(void){
 }
 
 int main(){
-    printf("Kol-vo vershin: "); //string1
+    printf("Kol-vo vershin: ");
     int kolvo;
     scanf("%d",&kolvo);
     if (kolvo <= 0)
@@ -45,7 +45,7 @@ int main(){
         }
     }
     
-    printf("Enter names of elements separated by spaces:\n"); //string2
+    printf("Enter names of elements separated by spaces:\n");
     getchar();
         
     for(int i=0; i<kolvo; i++){
@@ -58,7 +58,7 @@ int main(){
         }
     }
             
-    printf("Enter for each one connection separated by spaces\n"); // tut ne zabit' v konce problel!!!  //string3
+    printf("Enter for each one connection separated by spaces\n"); // tut ne zabit' v konce problel!!!
     for(int i=0; i<kolvo; i++){
         printf("%d: ",i);
         _Bool flag=1;
@@ -78,7 +78,7 @@ int main(){
         }
     }
     
-    printf("\n");  //string4
+    printf("\n");
     _Bool relat_graph = 1;
     for(int i=0; i<kolvo; i++){
         _Bool temp_relat_graph = 0;
@@ -93,9 +93,9 @@ int main(){
             relat_graph=0;
     }
     if(relat_graph == 0){
-        printf("unrelated graph\n"); //string5
+        printf("unrelated graph\n");
     } else {
-        printf("related graph\n"); //string6
+        printf("related graph\n");
 
     }
 
@@ -128,7 +128,7 @@ int main(){
             }
         }
     }
-    strcat(string, "}' | dot -Tpng > ./graph.png"); //string8
+    strcat(string, "}' | dot -Tpng > ./graph.png");
 
     
     system(string);
